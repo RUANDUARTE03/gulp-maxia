@@ -7,7 +7,7 @@ sass.compiler = require("node-sass"); //Necessário para funcionar gulp-sass
 
 const bundleSass = () => {
   return gulp
-    .src("./static/**/*.scss")
+    .src("./static/index.scss")
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError)) // Converte Sass para CSS mimificado com gulp-sass
     .pipe(gulp.dest("./dist"));
 };
