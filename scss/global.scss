@@ -68,7 +68,7 @@
 		display: inline-block;
 		height: 2px;
 		flex: 1;
-		background-color: currentColor;
+		background-color: $purple-normal;
 	}
 
 	&::before {
@@ -321,7 +321,6 @@ body {
 		border: 2px solid white;
 		border-radius: 50%;
 		background-color: $black-1;
-		background-image: url('../assets/svg/mini-check.svg');
 	}
 }
 
