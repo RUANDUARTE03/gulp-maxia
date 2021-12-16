@@ -1,0 +1,269 @@
+@import './colors';
+
+.card-maxia {
+	position: relative;
+	display: flex;
+	background: $white;
+	border-radius: 0.7rem;
+	flex-direction: column;
+	border: none;
+	background-clip: border-box;
+	box-shadow: 0px 0px 3px 3px rgba(196, 196, 196, 0.25);
+	
+	.card-header-maxia {
+		border-radius: 0.7rem 0.7rem 0 0;
+		padding: 1rem 0 0 1rem;
+		margin-bottom: 0;
+		
+		hr {
+			background: $black-1;
+			max-width: 95%;
+			margin: 0 !important;
+		}
+	}
+	
+	.btn-card {
+		border-radius: 0 0 0.7rem 0.7rem;
+	}
+}
+
+.card-disciplina {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background: $white;
+	box-shadow: 0px 0px 2.18842px 2.18842px rgba(196, 196, 196, 0.25);
+	transition: 0.3s ease;
+	text-decoration: none;
+	color: $black-1;
+	
+	&:hover {
+		transform: scale(1.02);
+	}
+	
+	svg {
+		height: 40px;
+	}
+}
+
+.card-discplina-selected {
+	border-radius: 2.1rem;
+	background: $white;
+	box-shadow: 0px 0px 8.53488px 8.53488px rgba(196, 196, 196, 0.25);
+	
+	h1 {
+		font-size: 59px;
+	}
+	
+	h4 {
+		font-size: 34px;
+	}
+	
+	small {
+		font-size: 25px;
+	}
+}
+
+.list-maxia {
+	ul {
+		list-style: none;
+		li {
+			img {
+				margin-right: 0.6rem;
+			}
+		}
+	}
+}
+
+.cards_radio:checked + label .card-maxia {
+	opacity: 1;
+}
+
+.card-maxia-disabled {
+	opacity: 0.4;
+	
+	.card-header-maxia {
+		background: $gray-1;
+		color: $white;
+	}
+	
+	.iniciado {
+		background: $pink-light;
+	}
+	
+	.desenvolvimento {
+		background: $pink-dark;
+	}
+	
+	.esperado {
+		background: $purple-normal;
+	}
+	
+	.superado {
+		background: $blue-dark;
+	}
+	
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+
+.card-width {
+	max-width: 130px;
+}
+
+.card-score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	padding: 1rem;
+	
+	cursor: pointer;
+	box-shadow: 0px 0px 3px 3px rgba(196, 196, 196, 0.25);
+	border-radius: 12px;
+	color: $black-1;
+	background: $white;
+	transition: 0.3s ease;
+	text-decoration: none;
+	
+	&:hover {
+		transform: scale(1.02);
+		color: $blue-normal;
+	}
+}
+
+.card-score-ia {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+	background: $white;
+	box-shadow: 0px 0px 3.93913px 3.93913px rgba(196, 196, 196, 0.25);
+	border-radius: 12px;
+	padding: 12px 49px;
+	color: $black-1;
+	text-decoration: none;
+	
+	p {
+		font-size: 15px;
+	}
+	
+	h2 {
+		font-size: 27.57px;
+	}
+	
+	&:hover {
+		transform: scale(1.02);
+		color: $blue-normal;
+	}
+}
+
+.card-grafico {
+	background: $white;
+	border-radius: 10.9px;
+	box-shadow: 0px 0px 3px 3px rgba(196, 196, 196, 0.25);
+	padding: 1.18rem 0;
+	
+	p {
+		margin-left: 1.375rem;
+	}
+}
+
+#form-disciplina {
+
+	li {
+		margin-bottom: 1rem;
+	}
+
+	.card-capitulo.checked {
+		background: $blue-normal;
+		color: $white;
+		
+		p {
+			color: $white;
+		}
+	}
+	
+	.card-capitulo {
+		border-radius: 12px;
+		border: 2px solid $blue-normal;
+		padding: 1rem;
+		
+		p {
+			color: $blue-normal;
+		}
+		
+		.custom-check {
+			position: relative;
+
+			.checkbox_Cap{			
+				display: none;
+			}
+			
+			input + label:before{	
+				content: '';
+				height: 2.6rem;
+				width: 2.6rem;
+				border: 2px solid $blue-normal;
+				display: inline-block;
+				border-radius: 7px;		
+			}
+			
+			input:checked + label:before {
+				background: $white;
+			}
+			
+			input:checked + label:after {
+				content: "";
+				display: block;
+				border: 4px solid $blue-normal;
+				height: 20px;
+				width: 14px;
+				top: 7px;
+				left: 14px;
+				position: absolute;
+				transform: rotate(38deg);
+				border-top: transparent;
+				border-left: transparent;
+			}		
+		}
+		
+	}
+}
+
+.card-linguagem {
+	min-width: 100px;
+	border: 1px solid $gray-1;
+	border-radius: 10px;
+	padding: 10px 10px;
+	box-shadow: 0px 0px 2.18842px 2.18842px rgba(196, 196, 196, 0.25);
+}
+
+.form-select {
+	border-radius: 12px;
+	border: 0.5px solid $gray-1;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-floating {
+	border: 0.5px solid #C4C4C4;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+
+	.form-control {
+		border: none;
+		border-radius: 12px;
+		outline: none;
+	}
+}
+
+
+

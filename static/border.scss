@@ -1,0 +1,68 @@
+@import './colors';
+
+.radius-top-ia {
+	border-radius: 1rem 1rem 0 0;
+	box-shadow: 0 -5px 9px -5px rgba(0, 0, 0, 0.3);
+	transform: translateY(-12px);
+}
+
+.radius-top2-ia {
+	border-radius: 1rem 1rem 0 0;
+	box-shadow: 0 -5px 9px -5px rgba(0, 0, 0, 0.3);
+}
+
+.radius-bottom-ia {
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.radius-bottom {
+	border-radius: 2rem 2rem 0 0;
+	margin-top: -2.5rem;
+	background-color: $white;
+	box-shadow: 0px -25px 50px $pink-dark;
+}
+.radius-primary {
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0px -25px 50px $purple-dark;
+}
+.radius-secondary {
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0px -25px 50px $blue-dark;
+}
+.radius-info {
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0px -25px 50px $pink-dark;
+}
+
+.border-progress-primary {
+	border-radius: 8px;
+	border: 1px solid $purple-normal;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.border-progress-secondary {
+	border-radius: 8px;
+	border: 1px solid $blue-normal;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.border-progress-success {
+	border-radius: 8px;
+	border: 1px solid #198754;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.border-progress-warning {
+	border-radius: 8px;
+	border: 1px solid #ffc107;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.border-progress-danger {
+	border-radius: 8px;
+	border: 1px solid #dc3545;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+

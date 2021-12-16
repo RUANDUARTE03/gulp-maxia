@@ -1,0 +1,239 @@
+@import './colors';
+
+// modal
+// reset bootstrap
+.modal-ia {
+	.modal-dialog {
+		margin: 0 auto !important;
+	}
+	
+	.modal-content {
+		height: 100vh;
+		background: rgba(111, 34, 130, 0.7);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+	
+	.btn-close {
+		width: 42px;
+		height: 42px;
+		margin-bottom: 1rem;
+		border-radius: 50%;
+		background-color: $pink-normal;
+		color: $white;
+		opacity: 1;
+		background: none;
+		background-color: $pink-normal;
+		box-shadow: 0 0 4px 1px $pink-light, 0 0 4px 2px $pink-light;
+		transition: 0.5s ease;
+		
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		
+		&:hover {
+			background-color: $pink-light;
+			box-shadow: 0 0 4px 1px $pink-normal, 0 0 4px 2px $pink-normal;
+		}
+	}
+}
+
+.modal-ia-loading {
+	.modal-dialog {
+		margin: 0 auto !important;
+	}
+	
+	.modal-content {
+		height: 100vh;
+		background: rgba(73, 73, 73, 0.85);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		
+		.card-loading {
+			width: 323px;
+			height: 100px;
+			padding: 21px 9.73px;
+			border-radius: 12px;
+		}
+	}
+	
+	
+}
+
+.modal-rubrica {
+	.modal-dialog {
+		margin: 0 auto !important;
+	}
+	
+	.modal-content {
+		background: rgba(54, 51, 54, 0.7);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+	
+	.btn-close {
+		width: 42px;
+		height: 42px;
+		margin-bottom: 1rem;
+		border-radius: 50%;
+		background-color: $pink-normal;
+		color: $white;
+		opacity: 1;
+		background: none;
+		background-color: $pink-normal;
+		box-shadow: 0 0 4px 1px $pink-light, 0 0 4px 2px $pink-light;
+		transition: 0.5s ease;
+		
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		
+		&:hover {
+			background-color: $pink-light;
+			box-shadow: 0 0 4px 1px $pink-normal, 0 0 4px 2px $pink-normal;
+		}
+	}
+}
+
+// 20 - Disciplina.html
+.hr-modal {
+	height: 1px;
+	width: 90%;
+	background: $white;
+}
+
+//Tutoria/17-oferta-duvida
+
+.modal-tempo-container {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	
+	.modal-tempo {
+		background: $white;
+		max-width: 359px;
+		border-radius: 12px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		padding: 1rem;
+		text-align: center;
+		
+		.btn-modal-tempo{
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 12px;
+			background-color: $white;
+			height: 39px;
+			width: 130px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.btn-modal-tempo.secondary {
+			border: 1px solid $blue-normal;
+			color: $blue-normal;
+		}
+
+		.btn-modal-tempo.info {
+			border: 1px solid $pink-normal;
+			color: $pink-normal;
+		}
+	}
+}
+
+.modal-tempo-container.mostrar {
+	display: flex;
+}
+
+.modal-tempo-container.mostrar {
+	.modal-tempo {
+		animation: modal .3s;
+	}
+}
+
+@keyframes modal {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -60px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.modal-senha-container {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	.modal-senha {
+		background: $white;
+		max-width: 359px;
+		border-radius: 12px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		padding: 1rem;
+		text-align: center;
+	}
+}
+
+.modal-senha-container.mostrar {
+	display: flex;
+}
+
+.modal-email {
+	background-color: $white;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 340px;
+	border-radius: 12px;
+	padding: 1rem;
+}
+
+.modal-container-pergunta {
+		width: 100vw;
+		height: 100%;
+		background: rgba(0, 0, 0, .5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+		display: none;
+		justify-content: center;
+		align-items: center;
+
+	.modal-pergunta {
+		background-color: $white;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		width: 340px;
+		border-radius: 12px;
+		padding: 1rem;
+		
+	}
+}
+
+.modal-container-pergunta.mostrar {
+	display: flex;
+}
+
+
+

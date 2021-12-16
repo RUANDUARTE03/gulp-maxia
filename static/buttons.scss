@@ -1,0 +1,769 @@
+@import './colors';
+
+// reset bootstrap
+.btn-secondary,
+.btn-info,
+.btn-outline-secondary:hover,
+.btn-outline-info:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-info:active,
+.btn-outline-info.active,
+.btn-check:checked + .btn-outline-secondary,
+.btn-check:checked + .btn-outline-info {
+	color: $white !important;
+}
+
+//maxia
+.btn-maxia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 4px 24px;
+	font-weight: bold;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px solid transparent;
+	min-width: 262px;
+}
+
+.btn-rlt {
+	margin: 0.35em;
+	height: 40px;
+	font-size: 1rem;
+	border-radius: 20px;
+	border: none;
+	padding: 0 1rem;
+}
+.btn-rlt.disabled {
+	margin: 0.35em;
+	height: 40px;
+	font-size: 1rem;
+	border-radius: 20px;
+	border: 1px solid $gray-1;
+	padding: 0 1rem;
+	opacity: 0.5;
+	background: $white;
+}
+
+.rlt-primary {
+	background: $purple-normal;
+	color: $white;
+}
+
+.rlt-primary-outline {
+	border: 1px solid $purple-normal;
+	color: $purple-normal;
+}
+
+.rlt-secondary {
+	background: $blue-light;
+	color: $white;
+}
+
+.rlt-secondary-dark {
+	background: $blue-dark;
+	color: $white;
+}
+
+.rlt-secondary-outline {
+	border: 1px solid $blue-normal;
+	color: $blue-normal;
+}
+
+.rlt-info {
+	background: $pink-light;
+	color: $white;
+}
+
+.rlt-info-dark {
+	background: $pink-dark;
+	color: $white;
+}
+
+.rlt-info-outline {
+	border: 1px solid $pink-normal;
+	color: $pink-normal;
+}
+
+.rlt-white {
+	background: $white;
+	color: $black-1;
+}
+
+.rlt-white-outline {
+	border: 1px solid $white;
+	color: $white;
+}
+
+.rlt-black {
+	background: $black-1;
+	color: $white;
+}
+
+.rlt-black-outline {
+	border: 1px solid $black-1;
+	color: $black-1;
+}
+
+.outline-button-purple {
+	color: $purple-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $purple-normal;
+		box-shadow: 0px 6px 0px $purple-dark;
+		&::after {
+			border-color: $purple-normal;
+		}
+	}
+}
+
+.outline-button-blue {
+	color: $blue-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $blue-normal;
+		box-shadow: 0px 6px 0px $blue-dark;
+		&::after {
+			border-color: $blue-normal;
+		}
+	}
+}
+
+.outline-button-pink {
+	color: $pink-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $pink-normal;
+		box-shadow: 0px 6px 0px $pink-dark;
+		&::after {
+			border-color: $pink-normal;
+		}
+	}
+}
+
+.outline-button-white {
+	color: $white;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: #1a1a1a;
+		background-color: $white;
+		// box-shadow: 0px 6px 0px $purple-dark;
+		// &::after {
+		// 	// border-color: $purple-normal;
+		// }
+	}
+}
+
+.btn-info.btn-outline-maxia {
+	color: $pink-normal;
+	border-color: currentColor;
+}
+
+.btn-primary.btn-maxia {
+	background-color: $purple-normal;
+	box-shadow: 0px 6px 0px $purple-dark;
+	&::after {
+		border-color: $purple-normal;
+	}
+}
+
+.btn-secondary.btn-maxia {
+	background-color: $blue-normal;
+	box-shadow: 0px 6px 0px $blue-dark;
+	&::after {
+		border-color: $blue-normal;
+	}
+}
+
+.btn-info.btn-maxia {
+	background-color: $pink-normal;
+	box-shadow: 0px 6px 0px $pink-dark;
+	&::after {
+		border-color: $pink-normal;
+	}
+}
+
+.btn-disabled.btn-maxia {
+	color: $white;
+	background-color: $gray-1;
+	box-shadow: 0px 6px 0px $gray-3;
+	cursor: not-allowed;
+}
+
+// BOTÕES OUTILINE
+.btn.btn-outline-white {
+	background: $white;
+}
+
+.btn-maxia.outline-primary {
+	border: 5px solid $purple-normal;
+	color: $purple-normal;
+	&:hover {
+		background: $purple-normal;
+		color: $white;
+	}
+}
+
+.btn-maxia.outline-secondary {
+	border: 5px solid $blue-normal;
+	color: $blue-normal;
+	&:hover {
+		background-color: $blue-normal;
+		color: $white;
+
+		svg {
+			color: $white;
+		}
+	}
+
+	svg {
+		color: $blue-normal;
+	}
+}
+
+.btn-maxia.outline-info {
+	border: 5px solid $pink-normal;
+	color: $pink-normal;
+	&:hover {
+		background-color: $pink-normal;
+		color: $white;
+	}
+}
+.mw-400 {
+	max-width: 400px;
+}
+
+.btn-desafio {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.4rem;
+	border: 2px solid $gray-1;
+	height: 48px;
+	width: 48px;
+	justify-content: center;
+	align-items: center;
+
+	span:nth-child(1) {
+		font-weight: bold;
+		font-size: 14px;
+		color: $gray-1;
+	}
+
+	span:nth-child(2) {
+		font-size: 10px;
+		color: $gray-1;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-rosa {
+	background: $pink-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $pink-normal;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-roxo {
+	background: $purple-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $purple-normal;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-azul {
+	background: $blue-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $blue-normal;
+	}
+}
+
+.legenda {
+	span {
+		height: 20px;
+		width: 20px;
+		margin-right: 5px;
+		border-radius: 3px;
+	}
+
+	.legenda-rosa {
+		background: $pink-normal;
+	}
+
+	.legenda-roxa {
+		background: $purple-normal;
+	}
+
+	.legenda-azul {
+		background: $blue-normal;
+	}
+
+	.legenda-disponivel {
+		border: 2px solid $black-1;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.section-aprendizagem {
+	border-radius: 1rem;
+	box-shadow: 0px 3px 15px $gray-1;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	.materia {
+		color: $black-1;
+	}
+	.section-notification {
+		img {
+			width: 20px;
+			margin-left: 5px;
+		}
+	}
+	.notification {
+		background: $pink-normal;
+		color: $white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+}
+
+.btn-dashboard-info {
+	border-radius: 1.25rem;
+	text-transform: uppercase;
+	border: none;
+	padding: 14px 14px;
+	font-weight: bold;
+	box-shadow: inset 0px -4px 0px $pink-dark;
+	outline: none;
+}
+
+.btn-dashboard-primary {
+	border-radius: 1.25rem;
+	text-transform: uppercase;
+	border: none;
+	padding: 14px 14px;
+	font-weight: bold;
+	box-shadow: inset 0px -4px 0px $purple-dark;
+	outline: none;
+}
+
+.btn-dashboard-secondary {
+	border-radius: 1.25rem;
+	text-transform: uppercase;
+	border: none;
+	padding: 14px 14px;
+	font-weight: bold;
+	box-shadow: inset 0px -4px 0px $blue-dark;
+	outline: none;
+}
+
+.btn-dashboard-disabled {
+	border-radius: 1.25rem;
+	text-transform: uppercase;
+	border: none;
+	padding: 14px 14px;
+	font-weight: bold;
+	background: $gray-1;
+	color: $white;
+	box-shadow: inset 0px -4px 0px #a4a4a4;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn-question {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	text-decoration: none;
+	border: 2px solid $white;
+	color: $white;
+
+	&:hover {
+		background: $white;
+		color: $blue-normal;
+	}
+}
+// .btn-question + .btn-question {
+// }
+.btn-question.selecionado {
+	background: $white;
+	color: $blue-normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-question-2 {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	text-decoration: none;
+	border: 2px solid $pink-normal;
+	background: $pink-normal;
+	color: $white;
+}
+.btn-question-2.selecionado {
+	background: $white;
+	color: $pink-normal;
+}
+
+//new
+.new-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	border: 0;
+	border-radius: 20px;
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background: transparent;
+	box-shadow: inset 0px -4px 0px transparent;
+
+	&:hover {
+		filter: brightness(1.1);
+	}
+
+	&:active {
+		filter: brightness(1.1);
+		transform: translateY(2px);
+	}
+}
+
+.new-button.disabled,
+.new-button:disabled {
+	cursor: not-allowed;
+	background: $gray-1 !important;
+	box-shadow: inset 0px -4px 0px #a4a4a4 !important;
+}
+
+.new-button.purple {
+	background-color: $purple-normal;
+	box-shadow: inset 0px -4px 0px $purple-dark;
+
+	&:active {
+		box-shadow: inset 0px -0px 0px transparent;
+	}
+}
+
+.new-button.blue {
+	background-color: $blue-normal;
+	box-shadow: inset 0px -4px 0px $blue-dark;
+
+	&:active {
+		box-shadow: inset 0px -0px 0px transparent;
+	}
+}
+
+.new-button.pink {
+	background-color: $pink-normal;
+	box-shadow: inset 0px -4px 0px $pink-dark;
+
+	&:active {
+		box-shadow: inset 0px -0px 0px transparent;
+	}
+}
+
+// Tela 19-linguagens.html 
+.link-linguagens {
+	text-decoration: none;
+}
+.link-linguagens.active {
+	background: $blue-normal;
+	color: $white;
+}
+
+.btn-border-secondary {
+	position: relative;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2rem;
+	text-decoration: none;
+	border: 2px solid $blue-light;
+	color: $blue-light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-border-secondary.selecionado {
+
+	background: $blue-light;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-border-secondary.check {
+	&::after {
+		content: '';
+		position: absolute;
+		background: $blue-light;
+		width: 1.2rem;
+		height: 1.2rem;
+		border-radius: 50%;
+		border: 2px solid $white;
+		bottom: 0;
+		right: 0;
+		background-image: url('../assets/svg/mini-check.svg')
+	}
+}
+
+.btn-border-primary {
+	position: relative;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	text-decoration: none;
+	border: 2px solid $purple-light;
+	color: $purple-light;
+}
+
+.btn-border-primary.selecionado {
+
+	background: $purple-light;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-border-primary.check {
+	&::after {
+		content: '';
+		position: absolute;
+		background: $purple-light;
+		width: 1.2rem;
+		height: 1.2rem;
+		border-radius: 50%;
+		border: 2px solid $white;
+		bottom: 0;
+		right: 0;
+		background-image: url('../assets/svg/mini-check.svg')
+	}
+}
+
+.btn-diagnostico {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.75rem;
+	padding: 0.56rem 0;
+}
+
+.btn-diagnostico.selecionado {
+	background: $blue-normal;
+	color: $white;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 1.2rem;
+		height: 1.2rem;
+		bottom: 5;
+		right:  -8px;
+	
+		background: $blue-normal;
+		border-radius: 50%;
+		border: 2px solid $white;
+		background-image: url('../assets/svg/mini-check.svg')
+
+	}
+}
+
+.card-img-icon {
+	border-right: 0.5px solid #f2f2f2;
+	padding-right: 1rem;
+
+}
+
+.btn-alarm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.content-btn-icon {
+	margin-right: 12px;
+	.btn-icon-tutoria {
+		background-color: $white;
+		border: none;
+	
+		svg {
+			fill: $black-1;
+		}
+	} 
+
+	input[type="file"] {
+		display: none;
+	}
+
+	label {
+		svg {
+			fill: $black-1;
+		}
+	}
+}
+
+.content-btn-tutoria {
+	border-left: 1px solid $gray-1;
+
+	.btn-tutoria {
+		width: 4.8rem;
+		border: 1px solid $blue-normal;
+		box-sizing: border-box;
+		border-radius: 8px;
+		background: none;
+		font-size: 1rem;
+		font-weight: 500;
+		color: $blue-normal;
+		margin-left: 12px;
+	
+	}
+}
+
+.btn-order {
+	border: 0.5px solid $gray-1;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	background: $white;
+	height: 2.5rem;
+	width: 3rem;
+
+	svg {
+		fill: $blue-normal;
+	}
+}
+
+.btn-materia {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	border: none;
+	color: $white;
+	height: 28px;
+	width: 72px;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-duvida {
+	border: 1px solid $blue-normal;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	font-size: 24px;
+	padding: 12px;
+}
+
+.btn-duvida-no {
+	border: 1px solid $pink-normal;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	font-size: 24px;
+	padding: 12px;
+
+	.form-check-input:checked {
+		border-color: $pink-normal;
+		background-color: $pink-normal;
+	}
+}
+
+.btn-aulas {
+	height: 25px;
+	border-radius: 6px;
+	border: 0.5px solid $gray-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	width: 70px;
+
+	svg, img {
+		height: 10px;
+	}
+}
+
+.btn-max-tutoria {
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	padding: 12px 0;
+	min-width: 130px;
+	background-color: $white;
+	cursor: pointer;
+}
+
+.btn-max-tutoria.secondary {
+	border: 1px solid $blue-normal;
+	color: $blue-normal;
+	font-weight: bold;
+}
+
+.btn-max-tutoria.info {
+	border: 1px solid $pink-normal;
+	color: $pink-normal;
+	font-weight: bold;
+}
+

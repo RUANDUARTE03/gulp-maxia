@@ -1,0 +1,147 @@
+@import './colors';
+
+.edit-profile-avatar {
+	position: relative;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	margin: 0 1rem;
+
+	.edit-profile-avatar:first-child {
+		margin-left: 0;
+	}
+
+	input[type='radio'] {
+		display: none;
+	}
+
+	input[type='radio'] + label {
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 72px;
+		height: 72px;
+		border-radius: 50%;
+		font-size: 2rem;
+		color: $white;
+		background-color: $gray-1;
+	}
+
+	input[type='radio']:checked + label {
+		&::after {
+			content: '';
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			border: 2px solid transparent;
+		}
+	}
+
+	input[type='radio'] + label.bg-cinza {
+		background-color: $gray-1;
+	}
+
+	input[type='radio']:checked + label.bg-cinza {
+		&::after {
+			border-color: $gray-1;
+		}
+	}
+
+	input[type='radio'] + label.bg-roxo {
+		background-color: $purple-normal;
+	}
+
+	input[type='radio']:checked + label.bg-roxo {
+		&::after {
+			border-color: $purple-normal;
+		}
+	}
+
+	input[type='radio'] + label.bg-blue {
+		background-color: $blue-normal;
+	}
+
+	input[type='radio']:checked + label.bg-blue {
+		&::after {
+			border-color: $blue-normal;
+		}
+	}
+
+	input[type='radio'] + label.bg-pink {
+		background-color: $pink-normal;
+	}
+
+	input[type='radio']:checked + label.bg-pink {
+		&::after {
+			border-color: $pink-normal;
+		}
+	}
+
+	input[type='radio'] + label.bg-preto {
+		background-color: $black-1;
+	}
+
+	input[type='radio']:checked + label.bg-preto {
+		&::after {
+			border-color: $black-1;
+		}
+	}
+}
+
+.edit-profile-avatar.atual {
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		width: 20px;
+		height: 20px;
+		border: 2px solid white;
+		border-radius: 50%;
+		background-color: $blue-normal;
+		background-image: url('../assets/svg/mini-check.svg');
+	}
+}
+
+.edit-profile-options {
+	display: flex;
+	flex-direction: column;
+
+	.edit-profile-op-link {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 12px;
+		font-size: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-decoration: none;
+		padding: 22px;
+		font-size: 1.2rem;
+		background-color: $white;
+		height: 60px;
+		color: $black-1;
+	}
+}
+
+.bg-cinza {
+	background-color: $gray-1 !important;
+}
+
+.bg-azul {
+	background-color: $blue-normal !important;
+}
+
+.bg-roxo {
+	background-color: $purple-normal !important;
+}
+
+.bg-rosa {
+	background-color: $pink-normal !important;
+}
+
+.bg-preto {
+	background-color: $black-1 !important;
+}
